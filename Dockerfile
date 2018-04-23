@@ -11,9 +11,9 @@ RUN tar xzf /tmp/apache-maven-3.5.3.tar.gz -C /opt/ && \
     ln -s /opt/maven/bin/mvn /usr/local/bin && \
     rm -f /tmp/apache-maven-3.5.3.tar.gz
 
-RUN cd /opt && git clone https://github.com/mikolas132/tutorial.git
+RUN cd /opt && git clone https://github.com/nuno5291/cswtutorial.git
 
-WORKDIR /opt/tutorial
+WORKDIR /opt/cswtutorial
 
 RUN mvn compile
 
